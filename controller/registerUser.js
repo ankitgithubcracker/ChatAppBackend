@@ -28,6 +28,8 @@ async function registerUser(request,response){
         const user = new UserModel(payload)
         const userSave = await user.save()
 
+        console.log("User created successfully")
+
         return response.status(201).json({
             message : "User created successfully",
             data : userSave,

@@ -27,7 +27,7 @@ async function checkPassword(request,response){
             httpOnly : true,
             secure : true,
         }
-
+        console.log("Login Successfully")
         return response.cookie('token',token,cookieOptions).status(200).json({
             message : "Login successfully",
             token : token,

@@ -12,7 +12,7 @@ async function checkEmail(request,response){
                 error : true
             })
         }
-
+        console.log("email verified")
         return response.status(200).json({
             message : "email verify",
             success : true,
